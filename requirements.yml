@@ -5,9 +5,9 @@
     name: elastic_role
   - src: git@github.com:kostidan/kibana-role.git
     scm: git
-    version: "main"
+    version: "master"
     name: kibana_role   
   - src: git@github.com:kostidan/filebeat-role.git
     scm: git
-    version: "main"
+    version: "master"
     name: filebeat_role        
