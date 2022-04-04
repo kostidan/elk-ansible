@@ -4,7 +4,7 @@ node('ansible'){
     }
     stage('Install requirements') {
         sh 'pip3 install -r requirements.txt'
-        sh 'ansible-galaxy install -r requirements.yml'
+        sh 'ansible-galaxy install --roles-path ./roles/ -r requirements.yml'
     }
     stage('Run Playbook'){
         if ( "${prod_run}" == "true" ){
